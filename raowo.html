@@ -1,13 +1,19 @@
 <html>
 <head>
 <script>
-const Http = new XMLHttpRequest();
-const url='https://theconciseapp.github.io/nitty-gritty/raowo.html';
-Http.open("GET", url);
-Http.send();
+var urlParams;
+(window.onpopstate = function () {
+    var match,
+        pl     = /\+/g,  // Regex for replacing addition symbol with a space
+        search = /([^&=]+)=?([^&]*)/g,
+        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+        query  = window.location.search.substring(1);
 
-Http.onreadystatechange = (e) => {
-  alert(Http.responseText)
-}
+    urlParams = {};
+    while (match = search.exec(query))
+       urlParams[decode(match[1])] = decode(match[2]);
+})();
+
+alert(JSON.stringify(urlParam));
 </script>
 </head>
