@@ -1,0 +1,10 @@
+<script>
+const Http = new XMLHttpRequest();
+const url='https://theconciseapp.github.io/nitty-gritty/raowo.html';
+Http.open("GET", url);
+Http.send();
+
+Http.onreadystatechange = (e) => {
+  alert(Http.responseText)
+}
+</script>
