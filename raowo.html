@@ -17,6 +17,8 @@ var urlParams;
 
 var data=JSON.stringify(urlParams);
 data=data.replace(/\\/g,'');
-alert(data);
+var re=new RegExp('"chargeResponseCode":"00"','i');
+var re2=new RegExp('"chargeResponseCode":"0"','i');
+ if(data.match(re)||data.match(re2)) alert('successful');
 </script>
 </head>
