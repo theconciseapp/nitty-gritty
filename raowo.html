@@ -22,10 +22,10 @@ var re2=new RegExp('"chargeResponseCode":"0"','i');
  if(data.match(re)||data.match(re2)){
 var amt=urlParams['coins'];
   alert(amt);
- //if(amt){
+ if(amt){
 localStorage.setItem('coins_expected',amt);
    localStorage.setItem('new_coins_initiated', data.match(/\d+/)[0]);
-// }
+ }
 
 alert(localStorage.getItem('new_coins_initiated'))
 
