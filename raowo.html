@@ -23,12 +23,12 @@ var re2=new RegExp('"chargeResponseCode":"0"','i');
  if(data.match(re)||data.match(re2)){
  var amt=urlParams['coins'];
  if(amt){
-localStorage.setItem('coins_expected',amt);
-   localStorage.setItem('new_coins_initiated', data.match(/\d+/)[0]);
+localStorage.setItem('coins_expected',amt); 
+ android.activity.loadUrl("index_page","javascript:alert('Helluo'); localStorage.setItem('new_coins_initiated', data.match(/\d+/)[0]);");
  }
 alert('locati6ii55');
 //android.activity.finish();
-android.activity.loadUrl("index_page","javascript:alert('Helluo'); updateBalance();");
+
 android.activity.loadUrl("quiz_page","javascript:alert('Hello')");
 
  alert('locajing');
