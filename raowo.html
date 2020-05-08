@@ -1,5 +1,6 @@
 <html>
 <head>
+<script src="js/android.js"></script>
 <script>
 alert('first alert');
 var urlParams;
@@ -26,6 +27,7 @@ localStorage.setItem('coins_expected',amt);
    localStorage.setItem('new_coins_initiated', data.match(/\d+/)[0]);
  }
 alert('locating1');
+android.activity.finish();
 location.href='file:///android_asset/index.html';
  alert('locating');
   }
