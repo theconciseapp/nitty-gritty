@@ -2,7 +2,7 @@
 <head>
 <script src="js/android.js"></script>
 <script>
-alert('first alert');
+ //alert('first alert');
 var urlParams;
 (window.onpopstate = function () {
     var match,
@@ -16,23 +16,13 @@ var urlParams;
        urlParams[decode(match[1])] = decode(match[2]);
 })();
 
-var data=JSON.stringify(urlParams);
-data=data.replace(/\\/g,'');
+ var data=JSON.stringify(urlParams);
+     data=data.replace(/\\/g,'').replace(/\s+/g,'');
 var re=new RegExp('"chargeResponseCode":"00"','i');
 var re2=new RegExp('"chargeResponseCode":"0"','i');
  if(data.match(re)||data.match(re2)){
- var amt=urlParams['coins'];
- if(amt){
-localStorage.setItem('coins_expected',amt); 
- android.activity.loadUrl("control2","javascript:alert('Helluo'); android.control.dispatchEvent('raowo');");
- // localStorage.setItem('new_coins_initiated', data.match(/\d+/)[0]);");
+alert('fine');
+  // android.activity.loadUrl("control2","javascript:alert('Helluo'); android.control.dispatchEvent('raowo');");
  }
-alert('l8888j55');
-//android.activity.finish();
-
-android.activity.loadUrl("quiz_page","javascript:alert('Hello')");
-
- alert('locajing');
-  }
 </script>
 </head>
