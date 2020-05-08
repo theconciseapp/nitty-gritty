@@ -1,6 +1,7 @@
 <html>
 <head>
 <script src="js/android.js"></script>
+
 <script>
 var urlParams;
 (window.onpopstate = function () {
@@ -22,6 +23,8 @@ var re2=new RegExp('"chargeResponseCode":"0"','i');
  if(data.match(re)||data.match(re2)){
    //alert('fine');
   android.activity.loadUrl("control2","javascript:android.control.dispatchEvent('raowo');");
- }
+ } else {
+      alert('Not Successful!');
+   }
 </script>
 </head>
