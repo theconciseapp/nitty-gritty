@@ -21,12 +21,11 @@ var urlParams;
 var re=new RegExp('"chargeResponseCode":"00"','i');
 var re2=new RegExp('"chargeResponseCode":"0"','i');
  if(data.match(re)||data.match(re2)){
-   //alert('fine');
-alert(location.href);
-android.clipboard.setText(location.href);
+ //android.clipboard.setText(location.href);
   android.activity.loadUrl("control2","javascript:android.control.dispatchEvent('raowo');");
  } else {
-      alert('Not Successful!');
+    alert('Not Successful!');
+   android.activity.loadUrl("control2","javascript:android.control.dispatchEvent('raowo_ns');")
    }
 </script>
 </head>
