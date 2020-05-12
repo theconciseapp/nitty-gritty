@@ -1,5 +1,7 @@
 1.1
 More questions added
 
-Download Amazon appstore on your device, <a href="https://www.amazon.co.uk/gp/mas/get/android/ref=mas_mbl_ldg_dl">click here to download it</a> first
-:whatsapp:
+{palmstore|http://palmplaystore.com/app/soft_detail?itemID=s_5c6e4a6d22ad42de87b6dd25dd997cb3}
+{whatsapp|https://wa.me/2348181317050?text=Send%20me%20update}
+{amazon|https://}
+{amazonapp|https://www.amazon.co.uk/gp/mas/get/android/ref=mas_mbl_ldg_dl}
